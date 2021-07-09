@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Kosen Judo Tournament</title>
+		<script src="./JS/one_page_website.js" defer></script>
+		<link rel="stylesheet" href="./CSS/one-page-website.css">
+	</head>
+	<body>
+	
+		<!-----NAV----->
+		<div>
+			<div>
+				<ul>
+					<a href="#home" id="link"><li>HOME</li>
+					<a href="#gallery" id="link"><li>GALLERY</li>
+					<a href="#videos" id="link"><li>VIDEOS</li>
+					<a href="#sign-up" id="link"><li>SIGN UP</li>
+				</ul>
+			</div>
+		</div>
+		<!----END NAV---->
+		
+		<!-----HOME----->
+		<div id="home">
+			<div>
+				<div>
+					<span style="color:black">Kosen Judo Tournament</span><br>
+					<p>Kosen Judo provides an alternaitve rule set to the Olympic form of competition.<br> 
+					Players require 2 ippon throws instead of 1 and there is more time allowed to<br>
+					work on the ground for submissions and pins.</p>
+				</div>
+			</div>
+		</div>
+		<!----END HOME---->	
+		
+		<!-- Images used to open the lightbox -->
+		<div class="row">
+			<div class="column">
+				<img src="./images/Thumbnail1.jfif" onclick="openModal();currentSlide(1)" class="hover-
+			shadow">
+			</div>
+			<div class="column">
+				<img src="./images/Thumbnail2.jfif" onclick="openModal();currentSlide(2)" class="hover-
+			shadow">
+			</div>
+			<div class="column">
+				<img src="./images/Thumbnail3.jpg" onclick="openModal();currentSlide(3)" class="hover-
+			shadow">
+			</div>
+			<div class="column">
+				<img src="./images/Thumbnail4.jpg" onclick="openModal();currentSlide(4)" class="hover-
+			shadow">
+			</div>
+		</div>
+
+		<!-- The Modal/Lightbox -->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content"></div>
+
+				<div class="mySlides">
+					<div class="numbertext">1 / 4</div>
+					<img src="img1_wide.jpg" style="width:100%">
+				</div>
+				
+				<div class="mySlides">
+					<div class="numbertext">2 / 4</div>
+					<img src="img2_wide.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">3 / 4</div>
+					<img src="img3_wide.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">4 / 4</div>
+					<img src="img4_wide.jpg" style="width:100%">
+				</div>
+
+				<!-- Next/previous controls -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				<!-- Caption text -->
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+
+				<!-- Thumbnail image controls -->
+				<div class="column">
+					<img class="demo" src="./images/Thumbnail1.jfif" onclick="currentSlided(1)" alt="Ne_Waza">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./images/Thumbnail2.jfif" onclick="currentSlided(2)" alt="Ne_Waza">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./images/Thumbnail3.jpg" onclick="currentSlided(3)" alt="Ne_Waza">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./images/Thumbnail4.jpg" onclick="currentSlided(4)" alt="Ne_Waza">
+				</div>
+			</div>
+		</div>
+		
+		<!----GALLERY---->
+		<section>
+			<div id="gallery">
+				<h1>GALLERY</h1>
+				<div>
+				
+					<!----Photo Container 1---->
+					<div>
+						<div>
+							<img src="./images/Thumbnail1.jfif" alt="Ne Waza">
+							<div>
+								<h3>Click to Englarge</h3>
+								<p>There are many judo techniques to learn, start learning today!</p>
+							</div>
+						</div>
+					</div>
+					<!--End Photo Container 1-->
+					
+					<!----Photo Container 2---->
+					<div>
+						<div>
+							<img src="./images/Thumbnail2.jfif" alt="Oasaekomi">
+							<div>
+								<h3>Click to Englarge</h3>
+								<p>There are many judo techniques to learn, start learning today!</p>
+							</div>
+						</div>
+					</div>
+					<!--End Photo Container 2-->
+					
+					<!----Photo Container 3---->
+					<div>
+						<div>
+							<img src="./images/Thumbnail3.jpg" alt="Kansetsu">
+							<div>
+								<h3>Click to Englarge</h3>
+								<p>There are many judo techniques to learn, start learning today!</p>
+							</div>
+						</div>
+					</div>
+					<!--End Photo Container 3-->
+					
+					<!----Photo Container 4---->
+					<div>
+						<div>
+							<img src="./images/Thumbnail4.jpg" alt="Nage Waza">
+							<div>
+								<h3>Click to Englarge</h3>
+								<p>There are many judo techniques to learn, start learning today!</p>
+							</div>
+						</div>
+					</div>
+					<!--End Photo Container 4-->					
+					
+				</div>
+			</div>
+		</section>
+		<!---End Gallery--->
+		
+		<!-------Video-------->
+		<section>
+			<div id="videos">
+				<div>
+					<h3>Check out this video of Kosen style Judo</h3>
+					<iframe width="956" height="538" 
+					src="https://www.youtube.com/embed/Q_8toXeCbiU" frameborder="0" 
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+					</iframe>
+				</div>
+			</div>
+		</section>
+		<!------End Video------>
+		
+		<!-------Sign Up------->
+		<section id="contact">
+			<div class="container">
+				<div class="heading-padding">
+					<h3 class="heading-padding">SIGN UP</h2>
+					<div class="sign-up">
+						<p class="contact-text">Please provide your basic contact information.</p>
+						<div class="form-contact">
+							<form action="" method="post">
+								<input class="rsvp" type="text" value="" placeholder="First Name">
+								<input class="rsvp" type="text" value="" placeholder="Last Name">
+								<input class="rsvp" type="text" value="" placeholder="Email Address">
+								<input class="rsvp" type="text" value="" placeholder="Phone Number">
+								<input class="rsvp" type="text" value="" placeholder="Rank">
+								<input class="rsvp" type="text" value="" placeholder="Weight">
+								<div class="form-spacer">
+									<label class="terms">Terms and Conditions</label>
+								</div>
+								<div class="submit">
+									<input type="submit" value="Submit">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!------Sign Up------>
+		<br>
+		<!-------Footer------->
+		<div>
+			www.kosenjudotournament.com &nbsp;|&nbsp; &copy; 2021
+		</div>
+		<!-----End Footer----->
+		
+	</body>
+</html>
