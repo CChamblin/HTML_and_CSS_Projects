@@ -1,2 +1,3 @@
 # One-Page_Website
-A one page website
+
+Contains a variety of elements such as a navigation bar, Modal Lightbox, and sign up form.
