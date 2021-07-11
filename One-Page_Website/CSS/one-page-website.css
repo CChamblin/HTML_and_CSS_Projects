@@ -144,7 +144,7 @@ body  {
 /* Create four equal columns that float next to eachother */
 .column {
     float: left;
-    width: 25%;
+    /* width: 25%; optional property, removed here to allow images to sit side by side in 1 row */
 }
 
 /* The Modal (background) */
