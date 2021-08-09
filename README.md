@@ -1,8 +1,8 @@
 # HTML-and-CSS-Projects
 
-##This respository contains practice problems and projects created with HTML and CSS.
+## This respository contains practice problems and projects created with HTML and CSS.
 
-###Projects
+### Projects
 
 Judo Site
 
